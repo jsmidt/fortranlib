@@ -11,11 +11,14 @@ integer,parameter :: dp = selected_real_kind(p=15,r=307)
 real(dp),allocatable :: x(:)
 real(dp)  :: xmin,xmax
 integer :: n
-n = 5
+
+
+n = 10
 xmin = 1.0
-xmax = 10.0
+xmax = 20.0
 allocate(x(n))
 
+! Create an array from 1 to 20 with 10 linearly spaced bins
 call linspace(xmin,xmax,x)
 write(*,*) x
 

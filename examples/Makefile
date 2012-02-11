@@ -1,4 +1,5 @@
 FC	= ifort
+#FC	= gfortran
 FFLAGS	= -O3 -I/../src/
 OBJS	= lib_array.o
 SRCOBJS	= ../src/$(OBJS)
