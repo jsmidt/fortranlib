@@ -4,15 +4,11 @@ program arrays
 !  in your codes.
 !
 use lib_array
+use base_types
 implicit none
-
-! Always remember to use the selected_real_kinds
-integer,parameter :: dp = selected_real_kind(p=15,r=307)
-real(dp),allocatable :: x(:)
-real(dp)  :: xmin,xmax
-integer :: n
-
-
+real(dp) :: xmin, xmax
+real(dp), allocatable, dimension(:) :: x
+integer  :: n
 n = 10
 xmin = 1.0
 xmax = 20.0
